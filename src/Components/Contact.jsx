@@ -1,7 +1,7 @@
 import { forwardRef } from "react";
 
 const Contact = forwardRef((props, ref) => {
-  const phoneNumber = "03108777428"; // Replace with your WhatsApp phone number
+  const phoneNumber = "+923108777428"; // Replace with your WhatsApp phone number
   const message = "Hello!"; // Pre-filled message
 
   const whatsappLink = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
