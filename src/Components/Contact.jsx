@@ -34,7 +34,7 @@ const Contact = forwardRef((props, ref) => {
           href="https://www.upwork.com/freelancers/~016f495aff474b8c60?mp_source=share"
         >
           <img
-            className="h-[20px] w-[20px] md:h-[40px] md:w-[40px] rounded-full object-fill"
+            className=" h-[20px] w-[20px] md:h-[40px] md:w-[40px] rounded-full object-fill"
             src="/images/upwork.png"
             alt="upwork"
           />
