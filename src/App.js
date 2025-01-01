@@ -1,13 +1,12 @@
 import "./App.css";
-import About from "./Components/About";
-import Experience from "./Components/Experience";
-import Contact from "./Components/Contact";
-import Header from "./Components/Header";
-import Hero from "./Components/Hero";
-import Projects from "./Components/Projects";
-import Footer from "./Components/Footer";
-import { useRef } from "react";
-
+import { lazy, useRef } from "react";
+const About = lazy(() => import("./Components/About"));
+const Experience = lazy(() => import("./Components/Experience"));
+const Hero = lazy(() => import("./Components/Hero"));
+const Header = lazy(() => import("./Components/Header"));
+const Contact = lazy(() => import("./Components/Contact"));
+const Projects = lazy(() => import("./Components/Projects"));
+const Footer = lazy(() => import("./Components/Footer"));
 function App() {
   const targetRef = useRef(null);
   const scrollToView = () => {
@@ -23,6 +22,7 @@ function App() {
           backgroundSize: "cover", // Optional: Ensures the image covers the container
           backgroundPosition: "right", // Optional: Centers the image
           backgroundRepeat: "no-repeat",
+          backgroundAttachment: "fixed",
         }}
       >
         <Hero onScroll={scrollToView} />
