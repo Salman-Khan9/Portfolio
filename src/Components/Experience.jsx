@@ -10,7 +10,72 @@ export default function Experience() {
           Explore Now
         </p>
       </div>
+
       <div className="flex flex-col md:gap-14 gap-8">
+        <div className="flex flex-col md:gap-3 gap-2">
+          <div className="flex justify-between w-full container mx-auto">
+            <p className="md:font-bold  md:text-[18px] text-[10px] font-medium ">
+              Stealth Startup / Frontend Developer
+            </p>
+            <p className="text-[10px] md:text-base">
+              Feb 2025 - Present | Dubai, UAE
+            </p>
+          </div>
+          <div>
+            <p className="container mx-auto text-[8px] md:text-base">
+              Currently, Leading development of a highly responsive and scalable
+              frontend interface for both mobile and desktop web platforms of an
+              AI-driven application. Utilized Next.js for server-side and Client
+              side rendering and optimized routing, Zustand for efficient and
+              lightweight state management, and Tailwind CSS to create a
+              consistent, modern, and fully responsive UI across all devices
+            </p>
+          </div>
+          <div className="flex md:gap-3 gap-2">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="bg-custom-gradient p-[0.5px] md:p-[1px] rounded-[15px] md:rounded-[20px] "
+              >
+                <button className="py-2 px-4 md:px-[15px] md:py-[5px] bg-black rounded-[15px] md:rounded-[20px] text-[8px] md:text-base">
+                  {skill}
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="flex flex-col md:gap-3 gap-2">
+          <div className="flex justify-between w-full container mx-auto">
+            <p className="md:font-bold  md:text-[18px] text-[10px] font-medium ">
+              Naimaat / Frontend Developer
+            </p>
+            <p className="text-[10px] md:text-base">
+              July 2024 - Present | Dubai, UAE
+            </p>
+          </div>
+          <div>
+            <p className="container mx-auto text-[8px] md:text-base">
+              I worked on the Naimaat Project as a Frontend Web Developer.
+              Naimaat, meaning "blessing" in Arabic, and the Naimaat team is on
+              a mission to democratize investment in the MENA region. They want
+              to empower individuals to invest confidently while providing
+              startups with crowdfunding solutions to fuel their growth.
+            </p>
+          </div>
+          <div className="flex md:gap-3 gap-2">
+            {skills.map((skill, index) => (
+              <div
+                key={index}
+                className="bg-custom-gradient p-[0.5px] md:p-[1px] rounded-[15px] md:rounded-[20px] "
+              >
+                <button className="py-2 px-4 md:px-[15px] md:py-[5px] bg-black rounded-[15px] md:rounded-[20px] text-[8px] md:text-base">
+                  {skill}
+                </button>
+              </div>
+            ))}
+          </div>
+        </div>
         <div className="flex flex-col md:gap-3  gap-2">
           <div className="flex justify-between w-full container mx-auto">
             <p className="md:font-bold font-medium md:text-[18px] text-[10px]">
@@ -38,38 +103,6 @@ export default function Experience() {
               <div
                 key={index}
                 className="bg-custom-gradient p-[0.5px] md:p-[1px] rounded-[15px] md:rounded-[20px]"
-              >
-                <button className="py-2 px-4 md:px-[15px] md:py-[5px] bg-black rounded-[15px] md:rounded-[20px] text-[8px] md:text-base">
-                  {skill}
-                </button>
-              </div>
-            ))}
-          </div>
-        </div>
-        <div className="flex flex-col md:gap-3 gap-2">
-          <div className="flex justify-between w-full container mx-auto">
-            <p className="md:font-bold  md:text-[18px] text-[10px] font-medium ">
-              Naimaat / Frontend Developer
-            </p>
-            <p className="text-[10px] md:text-base">
-              July 2024 - Present | Dubai, UAE
-            </p>
-          </div>
-          <div>
-            <p className="container mx-auto text-[8px] md:text-base">
-              Currently, I am working on the Naimaat Project as a Frontend Web
-              Developer. Naimaat, meaning "blessing" in Arabic, and the Naimaat
-              team is on a mission to democratize investment in the MENA region.
-              They want to empower individuals to invest confidently while
-              providing startups with crowdfunding solutions to fuel their
-              growth.
-            </p>
-          </div>
-          <div className="flex md:gap-3 gap-2">
-            {skills.map((skill, index) => (
-              <div
-                key={index}
-                className="bg-custom-gradient p-[0.5px] md:p-[1px] rounded-[15px] md:rounded-[20px] "
               >
                 <button className="py-2 px-4 md:px-[15px] md:py-[5px] bg-black rounded-[15px] md:rounded-[20px] text-[8px] md:text-base">
                   {skill}

@@ -1,6 +1,13 @@
 export default function Projects() {
   const Projects = [
     {
+      name: "SageeAi",
+      image: "../images/sage.png",
+      description:
+        "Leading frontend development of both Mweb and Desktop Web of an Ai-Powered web Application",
+      link: "https://salmank-dev-portfolio.vercel.app/",
+    },
+    {
       name: "Eyewa",
       image: "../images/eyewaLogo.png",
       description:
