@@ -1,5 +1,6 @@
 import "./App.css";
 import { lazy, useRef } from "react";
+import Expertise from "./Components/Experties";
 const About = lazy(() => import("./Components/About"));
 const Experience = lazy(() => import("./Components/Experience"));
 const Hero = lazy(() => import("./Components/Hero"));
@@ -29,6 +30,7 @@ function App() {
         <About />
 
         <Experience />
+        <Expertise />
         <Projects />
 
         <Contact ref={targetRef} />
