@@ -17,9 +17,7 @@ export default function Experience() {
             <p className="md:font-bold  md:text-[18px] text-[10px] font-medium ">
               Stealth Startup / Frontend Developer
             </p>
-            <p className="text-[10px] md:text-base">
-              Feb 2025 - Present | Dubai, UAE
-            </p>
+            <p className="text-[10px] md:text-base">Mar 2025 - May 2025 | US</p>
           </div>
           <div>
             <p className="container mx-auto text-[8px] md:text-base">
@@ -51,7 +49,7 @@ export default function Experience() {
               Naimaat / Frontend Developer
             </p>
             <p className="text-[10px] md:text-base">
-              July 2024 - Present | Dubai, UAE
+              Jan 2025 - Mar 2025 | Dubai, UAE
             </p>
           </div>
           <div>

@@ -2,7 +2,7 @@ export default function Expertise() {
   const expertise = [
     { name: "Next.js", image: "../images/nextjs.png" },
     { name: "React.js", image: "../images/react.png" },
-    { name: "Shopify", image: "../images/shopify.png" },
+    { name: "Framer Motion", image: "../images/framer.png" },
     { name: "Javascript", image: "../images/javascript.png" },
     { name: "Tailwind-Css", image: "../images/tailwind.png" },
     { name: "Html", image: "../images/html.png" },
