@@ -1,6 +1,7 @@
 import "./App.css";
-import { lazy, useRef } from "react";
+import { lazy, useRef, useState } from "react";
 import Expertise from "./Components/Experties";
+import ProductCameraPopup from "./Components/camera";
 const About = lazy(() => import("./Components/About"));
 const Experience = lazy(() => import("./Components/Experience"));
 const Hero = lazy(() => import("./Components/Hero"));
@@ -9,6 +10,7 @@ const Contact = lazy(() => import("./Components/Contact"));
 const Projects = lazy(() => import("./Components/Projects"));
 const Footer = lazy(() => import("./Components/Footer"));
 function App() {
+  const [open , setIsOpen] = useState(false)
   const targetRef = useRef(null);
   const scrollToView = () => {
     targetRef.current.scrollIntoView({ behavior: "smooth" });
@@ -26,6 +28,8 @@ function App() {
           backgroundAttachment: "fixed",
         }}
       >
+        <button className="w-56 h-56 bg-white text-black"  onClick={()=> setIsOpen(!open)}>Open camera</button>
+        <ProductCameraPopup open={open} setOpen={setIsOpen}/>
         <Hero onScroll={scrollToView} />
         <About />
 
